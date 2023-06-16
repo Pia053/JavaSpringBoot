@@ -1,4 +1,4 @@
-package com.example.ass_sof3021_ph19850.config;
+package com.example.ass_sof3021_ph19850.utilities;
 
 import org.apache.commons.lang3.RandomStringUtils;
 

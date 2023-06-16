@@ -51,7 +51,7 @@ public class ChiTietSanPhamController {
 
     @Autowired
     private IDongSanPhamService dongSanPhamService;
-    
+
     @Autowired
     private Validate validate;
 
@@ -223,14 +223,11 @@ public class ChiTietSanPhamController {
                 chiTietSanPhamADD.setAnhSanPham(chiTietSanPham.getAnhSanPham());
                 System.out.println(chiTietSanPham.getAnhSanPham());
                 chiTietSanPhamService.save(chiTietSanPhamADD);
-                System.out.println("vào thằng không cập nhập lại ảnh rồi");
             } else {
-                System.out.println("vào thằng cập nhập lại ảnh mới rồi");
                 chiTietSanPhamADD.setId(chiTietSanPham.getId());
                 chiTietSanPhamADD.setAnhSanPham(String.valueOf(uploadFile.getOriginalFilename()));
                 uploadFileUtils.handerUpLoadFile(uploadFile);
                 chiTietSanPhamService.save(chiTietSanPhamADD);
-                System.out.println("vào thằng cập nhặp ảnh mới nhưng không dính valid rồi");
             }
         }
         return "redirect:/admin/san-pham/list";

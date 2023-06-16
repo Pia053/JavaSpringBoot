@@ -1,7 +1,7 @@
 package com.example.ass_sof3021_ph19850.controller.login;
 
 import com.example.ass_sof3021_ph19850.config.MailService;
-import com.example.ass_sof3021_ph19850.config.PasswordGenerator;
+import com.example.ass_sof3021_ph19850.utilities.PasswordGenerator;
 import com.example.ass_sof3021_ph19850.entity.Account;
 import com.example.ass_sof3021_ph19850.service.IAccountService;
 import com.example.ass_sof3021_ph19850.utilities.HashUtil;
